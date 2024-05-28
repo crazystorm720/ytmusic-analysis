@@ -1,0 +1,12 @@
+name: youtube-music-metrics
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - pandas
+  - matplotlib
+  - seaborn
+  - pip
+  - pip:
+    - -r requirements.txt

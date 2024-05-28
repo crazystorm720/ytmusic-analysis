@@ -1,0 +1,4 @@
+site_name: YouTube Music Metrics
+nav:
+  - Home: index.md
+  - Visuals: visuals.md

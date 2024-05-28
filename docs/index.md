@@ -18,14 +18,17 @@ To get started with this project, follow these steps:
 
 1. Clone the project repository from GitHub
 2. Create and activate the conda environment using the provided `environment.yml` file
-3. Launch Jupyter Notebook and open the `listening_history_analysis.ipynb` notebook
-4. Follow the instructions in the notebook to authenticate with the YouTube Music API and perform the analysis
+3. Obtain YouTube Music API credentials and add them to the `auth.json` file
+4. Launch Jupyter Notebook and open the `listening_history_analysis.ipynb` notebook
+5. Run the code cells in the notebook to perform the analysis
 
 ## Project Structure
 
 The project structure is as follows:
 
+- `auth.json`: Contains the YouTube Music API authentication credentials (not tracked by Git)
 - `docs/`: Contains the mkdocs documentation files
+  - `images/`: Directory to store visualization images
   - `index.md`: The main page of the documentation (this file)
   - `visuals.md`: Showcases the visualizations created during the analysis
 - `notebooks/`: Contains the Jupyter Notebook files
@@ -36,10 +39,6 @@ The project structure is as follows:
 - `README.md`: Provides an overview of the project
 - `requirements.txt`: Lists the Python packages required for the project
 
-## Contributing
+## Visualizations
 
-If you would like to contribute to this project, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Check out the [Visualizations](visuals.md) page to see the interesting insights and patterns discovered from your YouTube Music listening history data.

@@ -1,3 +1,6 @@
+Here's the updated `README.md` file with all the necessary items to launch the project, based on our entire conversation history:
+
+```markdown
 # YouTube Music Metrics
 
 This project analyzes and visualizes your YouTube Music listening history data using the `ytmusicapi` library and Python.
@@ -29,21 +32,42 @@ This project analyzes and visualizes your YouTube Music listening history data u
    pip install -r requirements.txt
    ```
 
-4. Launch Jupyter Notebook:
+4. Obtain YouTube Music API credentials:
+
+   - Go to the [Google Developers Console](https://console.developers.google.com/).
+   - Create a new project or select an existing project.
+   - Enable the YouTube Data API v3 for your project.
+   - Create an API key and secret for your project.
+   - Copy the API key and secret.
+   - Create a file named `auth.json` in the project's root directory.
+   - Add the following content to `auth.json`, replacing the placeholders with your actual credentials:
+
+     ```json
+     {
+       "youtube_api_key": "YOUR_YOUTUBE_API_KEY",
+       "youtube_api_secret": "YOUR_YOUTUBE_API_SECRET"
+     }
+     ```
+
+   - Make sure to keep your `auth.json` file secure and do not share it publicly.
+
+5. Launch Jupyter Notebook:
 
    ```bash
    jupyter notebook
    ```
 
-5. Open the `notebooks/listening_history_analysis.ipynb` notebook and follow the instructions to authenticate with the YouTube Music API and perform the analysis.
+6. Open the `docs/notebooks/listening_history_analysis.ipynb` notebook and run the code cells to perform the analysis.
 
 ## Project Structure
 
+- `auth.json`: Contains the YouTube Music API authentication credentials (not tracked by Git)
 - `docs/`: Contains the mkdocs documentation files
+  - `images/`: Directory to store visualization images
   - `index.md`: The main page of the documentation
+  - `notebooks/`: Contains the Jupyter Notebook files
+    - `listening_history_analysis.ipynb`: The main notebook for analyzing the listening history data
   - `visuals.md`: Showcases the visualizations created during the analysis
-- `notebooks/`: Contains the Jupyter Notebook files
-  - `listening_history_analysis.ipynb`: The main notebook for analyzing the listening history data
 - `.gitignore`: Specifies files and directories to be ignored by Git
 - `environment.yml`: Defines the conda environment and dependencies
 - `mkdocs.yml`: Configuration file for mkdocs
@@ -87,11 +111,3 @@ To deactivate the conda environment and clean up the resources:
    ```
 
 3. Close any running Jupyter Notebook instances.
-
-## Contributing
-
-If you would like to contribute to this project, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

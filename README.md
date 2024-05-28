@@ -1,6 +1,3 @@
-Here's the updated `README.md` file with all the necessary items to launch the project, based on our entire conversation history:
-
-```markdown
 # YouTube Music Metrics
 
 This project analyzes and visualizes your YouTube Music listening history data using the `ytmusicapi` library and Python.

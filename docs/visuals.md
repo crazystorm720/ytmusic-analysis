@@ -38,4 +38,4 @@ This bar chart showcases your top 10 most played artists based on your listening
 
 This pie chart illustrates the distribution of genres in your listening history. It provides an overview of your musical preferences and the diversity of genres you listen to.
 
-For more details on the analysis and insights, refer to the Jupyter Notebook: [listening_history_analysis.ipynb](../docs/notebooks/listening_history_analysis.ipynb)
+For more details on the analysis and insights, refer to the Jupyter Notebook: [listening_history_analysis.ipynb](/docs/notebooks/listening_history_analysis.ipynb)
